@@ -1,0 +1,326 @@
+
+$primary-color: #129d87;
+$secondary-color: #C47C5A;
+$border-light: #C47C5A33;
+$text-color: black;
+$white: #ffffff;
+$gray-light: #dedede;
+$badge-border: #129d87;
+
+// Fontes
+$font-main: "Schibsted Grotesk", sans-serif;
+
+html,
+body {
+  font-family: $font-main;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0;
+  box-sizing: border-box;
+  color: $text-color;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  float: left;
+  width: 100%;
+  background: $primary-color;
+  padding: 20px;
+  border-bottom: 1px solid $border-light;
+  text-align: center;
+
+  img {
+    float: none;
+    height: 70px;
+  }
+}
+
+.submenu {
+  background: $white;
+  display: flex;
+  padding: 30px 0;
+
+  ul {
+    margin: 0 auto;
+    padding: 0;
+    float: left;
+
+    li {
+      display: inline-block;
+      font-size: 16px;
+      margin: 0;
+      padding: 0 25px;
+      border-right: 1px solid $text-color;
+
+      &:last-child {
+        border-right: 1px solid $white;
+      }
+    }
+  }
+}
+
+.btn-apply {
+  color: $primary-color;
+  background: $white;
+  padding: 8px 25px;
+  margin: 20px auto;
+  border-radius: 50px;
+  border: 3px solid $text-color;
+  text-decoration: none;
+  display: flex;
+  width: 220px;
+  vertical-align: middle;
+}
+
+.banner {
+  width: 100%;
+  padding-top: 60px;
+  background: url('../assets/Background.png') top center no-repeat;
+  background-size: cover;
+
+  h1 {
+    color: $text-color;
+    font-size: 45px;
+    padding: 20px;
+    margin: 20% 0;
+
+    span {
+      color: $primary-color;
+    }
+  }
+}
+
+.caroussel {
+  background: $primary-color;
+  padding: 30px 0;
+  display: flex;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+
+  p {
+    color: $text-color;
+    float: left;
+  }
+}
+
+.description {
+  padding: 40px;
+  width: 1008px;
+  font-size: 16px;
+  line-height: 1.5;
+  float: left;
+
+  p {
+    width: 495px;
+  }
+
+  .btn {
+    float: left;
+    width: 100%;
+    color: $white;
+    margin-top: 10%;
+    font-weight: 600;
+  }
+}
+
+.about p {
+  margin: 10px 0;
+}
+
+.sec-agendar,
+.sec-tratamentos {
+  background: $primary-color;
+  padding: 60px 0;
+  margin: 0;
+  height: auto;
+  text-align: center;
+
+  .btn-apply {
+    color: $primary-color;
+    background: $white;
+    padding: 20px 25px;
+    margin: 10px auto;
+    border-radius: 50px;
+    border: 3px solid $text-color;
+    font-size: 21px;
+    text-align: center;
+    width: 350px;
+  }
+}
+
+.sec-tratamentos {
+  text-align: left;
+  border: 1px solid $white;
+}
+
+ul.tratamentos {
+  li {
+    border: 1px solid $white;
+    margin: 8px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: $white;
+    float: left;
+  }
+}
+
+.title {
+  padding: 60px 0;
+  text-align: left;
+
+  &.white {
+    h2 {
+      color: $white;
+    }
+
+    .line {
+      background-color: $white;
+    }
+  }
+}
+
+ul.badge {
+  float: left;
+  margin: 30px 0;
+
+  li {
+    display: inline-block;
+    border: 2px solid $badge-border;
+    color: $badge-border;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 50px;
+    font-size: 12px;
+  }
+}
+
+ul.card-itens {
+  width: 100%;
+  float: left;
+  padding: 20px 0;
+
+  li {
+    width: 100%;
+    float: left;
+    color: $primary-color;
+    margin: 2px 0;
+    text-indent: 10px;
+    font-size: 14px;
+  }
+}
+
+.li-especialidades {
+  float: left;
+  width: 100%;
+  margin: 30px 0;
+  padding: 30px 0;
+  background: $gray-light;
+  border-radius: 8px;
+}
+
+.maps {
+  margin: 30px;
+
+  p {
+    font-weight: bold;
+  }
+
+  [class*="grid-"] {
+    padding: 0;
+  }
+}
+
+footer {
+  background: $primary-color;
+
+  p {
+    width: 100%;
+    float: left;
+    text-align: center;
+  }
+}
+
+.line {
+  margin: 10px 0;
+  width: 80px;
+  height: 5px;
+  background: $primary-color;
+  float: left;
+}
+
+// Owl Carousel
+.owl-carousel {
+  max-width: 780px;
+  margin: 0 auto;
+
+  .item {
+    font-size: 30px;
+    text-align: center;
+    padding: 40px 20px;
+    font-weight: 700;
+  }
+
+  .owl-nav {
+    margin: 0;
+
+    button {
+      z-index: 1;
+      width: 40px;
+      height: 40px;
+      background-color: #ccc;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      span {
+        font-size: 30px;
+        display: block;
+        width: 100%;
+      }
+
+      &.owl-prev {
+        left: -30px;
+      }
+
+      &.owl-next {
+        right: -30px;
+      }
+    }
+  }
+}
+
+.btn-wrap {
+  text-align: center;
+  width: 100%;
+}
+
+button {
+  background-color: #ddd;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.5s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &.disabled {
+    opacity: 0.6;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  
+}
